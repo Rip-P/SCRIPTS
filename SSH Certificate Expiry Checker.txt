@@ -1,0 +1,42 @@
+## SSH Certificate Expiry Checker
+
+### Description
+This Bash script, `ssh_cert_expiry_checker.sh`, is designed to check the expiry dates of SSL/TLS certificates (`cert.pem` files) located on remote servers via SSH. It facilitates the monitoring of certificate expiration dates, helping system administrators ensure the security and availability of SSL/TLS certificates used in their infrastructure.
+
+### Functionality
+The script performs the following functions:
+
+1. **SSH Connection**: Establishes SSH connections to remote servers to retrieve certificate information.
+2. **Certificate Expiry Check**: Examines `cert.pem` files in specified directories (`/etc/letsencrypt/live` by default) on remote servers.
+3. **Date Calculation**: Determines the start and expiry dates of certificates and calculates the remaining days until expiration.
+4. **Output Display**: Outputs certificate information including server, certificate path, start date, expiry date, and days remaining until expiry.
+5. **Error Handling**: Includes extremely basic error handling for SSH connectivity and file existence, providing error messages if issues are encountered.
+
+### Usage
+To use the script, follow these steps:
+
+1. Ensure Bash is installed on your system.
+2. Set up SSH key-based authentication for connecting to remote servers.
+3. Modify the `servers` array in the script to include the list of target servers.
+4. Optionally, adjust the `port` variable to specify the SSH port used for connections.
+5. Run the script in a terminal or command prompt.
+
+### Requirements
+- Bash (Bourne Again Shell)
+- SSH key-based authentication for remote server connections
+- Proper configuration of `port` variable and `servers` array in the script
+- Certificates stored in `/etc/letsencrypt/live` (or update the `path` variable in the script)
+
+### Disclaimer
+- Use this script at your own risk.
+- Always exercise caution when running scripts, especially those involving remote execution.
+- The authors and contributors to this script are not liable for any damages or misuse.
+
+### License
+This script is licensed under the GNU General Public License (GPL) version 3. For more details, refer to the [GPL license](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+### Author
+This script was created by RipTide Technologies for general consumption.
+
+### Contributions
+Contributions to this script are welcome. Please fork the repository, make your changes, and submit a pull request.
