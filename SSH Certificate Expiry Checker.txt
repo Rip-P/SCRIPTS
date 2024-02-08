@@ -1,7 +1,7 @@
 ## SSH Certificate Expiry Checker
 
 ### Description
-This Bash script, `ssh_cert_expiry_checker.sh`, is designed to check the expiry dates of SSL/TLS certificates (`cert.pem` files) located on remote servers via SSH. It facilitates the monitoring of certificate expiration dates, helping system administrators ensure the security and availability of SSL/TLS certificates used in their infrastructure.
+This Bash script, `crt.sh`, is designed to check the expiry dates of SSL/TLS certificates (`cert.pem` files) located on remote servers via SSH. It facilitates the monitoring of certificate expiration dates, helping system administrators ensure the security and availability of SSL/TLS certificates used in their infrastructure.
 
 ### Functionality
 The script performs the following functions:
