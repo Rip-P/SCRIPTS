@@ -1,5 +1,5 @@
 #!/bin/bash
-# This Bash script retrieves SSL certificate details for a specified domain using OpenSSL.
+# This simple Bash script retrieves SSL certificate details for a specified domain using OpenSSL.
 # It prompts the user to enter a domain name and then displays the certificate details.
 # Created by RipTideTech.io
 # 2/7/2024
